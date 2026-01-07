@@ -13,7 +13,7 @@ from OpenGL.GLU import *
 
 class OpenGLWidget(QOpenGLWidget):
     """
-    Класс-отрисовщик ("холст"). Изменений не требует.
+    Класс-отрисовщик ("холст"). Изменений не требу
     """
     def __init__(self, parent=None):
         super().__init__(parent)
@@ -215,7 +215,7 @@ class MainWindow(QMainWindow):
         param_b = self.slider_b.value() / 200.0
         angle_deg_c = self.slider_c.value()
         param_c = np.deg2rad(angle_deg_c)
-        angle_deg_d = self.slider_d.value()
+        angle_deg_d = self.slider_d.value() + self.slider_c.value()
         param_d = np.deg2rad(angle_deg_d)
         param_e = self.slider_e.value() / 200.0
         
